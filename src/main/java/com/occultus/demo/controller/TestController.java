@@ -10,6 +10,7 @@ public class TestController {
 
     @GetMapping("/test")
     public String test() {
+        log.warn("{}", "Test tag");
         return "Hello World";
     }
 }
